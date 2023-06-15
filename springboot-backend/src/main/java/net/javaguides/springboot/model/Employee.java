@@ -39,12 +39,10 @@ public class Employee {
 
     //La etiqueta "@Id" es utilizada en JPA para marcar un campo como clave primaria de una entidad, lo que permite
     // mapear objetos Java a filas de una tabla en una base de datos relacional.
-
-
+    @Id
     //La etiqueta "@GeneratedValue" se utiliza en JPA para especificar cómo se generará el valor de
     // una clave primaria de manera automática. Esta anotación se utiliza junto con la anotación "@Id" para indicar que
     // un campo representa la clave primaria de una entidad.
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
